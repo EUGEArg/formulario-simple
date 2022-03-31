@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap');
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+header {
+height: 30vh;
+border-bottom: 2px solid rgb(206, 153, 8);
+
+}
+
+.img-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.img {
+    width: 160px;
+    align-items: center;
+    border-radius: 50px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 20px;
+
+}
+
+li {
+    padding: 30px;
+}
+
+.encuesta {
+    margin-top: 30px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    padding: 20px;
+}
+
+.description {
+    padding: 20px 50px;
+    text-align: justify;
+    color: rgb(206, 153, 8);
+    line-height: 1.3;   
+} 
+
+.datos-form, .encuesta-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 25px;
+    padding: 20px;
+}
+
+input, select, button {
+    font-family: 'Barlow', sans-serif;
+    font-size:20px;
+    opacity: 0.6;
+    margin: 10px 10px 30px;  
+    border: 1px solid rgb(206, 153, 8);
+    padding: 5px 20px;
+} 
+
+
+option {
+    color: rgb(206, 153, 8);
+}
+
+.motivos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.valoracion {
+    display: flex;
+}
+
+.valoracion label {
+    padding-right: 20px;
+}
+
+.textarea-container {
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    border: 1px solid rgb(206, 153, 8);
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+}
+
+.btn-submit-cont {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.btn-submit {
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background: rgb(206, 153, 8);
+    font-size: 22px;
+}
+
+
+.encuesta-concluida-volver { 
+    padding-top: 30px;
+   text-align: center;
+    
+}
+
+.encuesta-concluida {
+    font-size: 35px;  
+    padding: 40px;
+    line-height: 1.3;
+  
+}
+
+
+.form-encuesta {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+  }
+
+.form-concluido {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}  
+  
+
+@media (max-width: 700px) {
+    .encuesta, input, textarea, select, button, .nuestrohotel, .motivos, .valoracion, #description
+    {
+      font-size: 14px;
+      margin: 10px 10px 10px 10px;
+      padding: 10px;
+    }
+  }

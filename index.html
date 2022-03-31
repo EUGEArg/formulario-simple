@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Encuesta de Satisfacción</title>
+  </head>
+  <body>
+    <header>
+      <div class="img-header">
+        <img src="./sol de otoño.png" class="img" />
+      </div>
+      <nav>
+        <ul>
+          <li>El Hotel</li>
+          <li>Centro de Convenciones</li>
+          <li>Paquetes</li>
+          <li>Contacto</li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="encuesta">
+      <h1 class="title">ENCUESTA DE SATISFACCIÓN</h1>
+
+      <p class="description">
+        Estimado cliente: <br />
+        Fue un placer recibirlo en Sol de Otoño Hotel Boutique. Le rogamos un
+        momento para enviarnos la presente encuesta. <br />
+        Trabajamos para ser la mejor propuesta de hospitalidad de Pergamino, con
+        excelente atención, calidad de servicio y conociendo las preferencias de
+        nuestros huéspedes. Su opinión y comentarios son importantes para
+        nuestros objetivos de calidad y experiencia de nuestros huéspedes.
+        <br />
+        Muchas gracias.
+      </p>
+    </div>
+
+    <form action="./encuesta-concluída.html">
+      <div class="datos-form">
+        <label for="name" class="datos">Nombre</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Ingrese su nombre"
+          required
+        />
+        <label for="email" class="datos">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="nombre@dominio.com"
+          required
+        />
+
+        <label for="number" class="datos">Edad</label>
+        <input type="number" name="number" id="number" min="18" max="99" />
+      </div>
+      <div class="encuesta-form">
+        <h2>¿CÓMO CONOCIÓ NUESTRO HOTEL?</h2>
+        <select name="seleccionar" required>
+          <option disabled selected value>Selecciona una Opción</option>
+          <option value="Redes Sociales">Redes Sociales</option>
+          <option value="Portales de Turismo">Portales de Turismo</option>
+          <option value="Recomendación">Recomendación</option>
+          <option value="Listado de hoteles en Google">
+            Listado de hoteles en Google
+          </option>
+          <option value="Otro">Otro</option>
+        </select>
+
+        <h2>PRINCIPAL MOTIVO PARA ELEGIR SOL DE OTOÑO</h2>
+        <div class="motivos">
+          <label class="uno">
+            <input
+              name="preferencias"
+              type="checkbox"
+              value="Opiniones de internet"
+            />Opiniones de internet
+          </label>
+          <label>
+            <input
+              name="preferencias"
+              type="checkbox"
+              value="Recomendaciones"
+            />Recomendaciones
+          </label>
+          <label>
+            <input
+              name="preferencias"
+              type="checkbox"
+              value="Concepto del hotel"
+            />Concepto del hotel
+          </label>
+          <label>
+            <input
+              name="preferencias"
+              type="checkbox"
+              value="Otro hotel estaba completo"
+            />Otro hotel estaba completo
+          </label>
+          <label>
+            <input name="preferencias" type="checkbox" value="Precio" />Precio
+          </label>
+        </div>
+        <h2>POR FAVOR, INDÍQUENOS SU VALORACIÓN GENERAL</h2>
+        <div class="valoracion">
+          <label> <input type="radio" name="okis" value="1" />1</label>
+          <label> <input type="radio" name="okis" value="2" />2</label>
+          <label> <input type="radio" name="okis" value="3" />3</label>
+          <label> <input type="radio" name="okis" value="4" />4</label>
+          <label> <input type="radio" name="okis" value="5" />5</label>
+          <label> <input type="radio" name="okis" value="6" />6</label>
+        </div>
+      </div>
+      <div class="textarea-container">
+      <textarea
+        name="textarea"
+        cols="90"
+        rows="7"
+        placeholder="Agregar sugerencias y comentarios:"
+      ></textarea>
+    </div>
+    <div class="btn-submit-cont">
+      <button type="submit" class="btn-submit">ENVIAR</button>
+    </form>
+  </div>
+  <footer class="form-encuesta">Hecho con &#128151 by EugeARG</footer>
+  </body>
+</html>
